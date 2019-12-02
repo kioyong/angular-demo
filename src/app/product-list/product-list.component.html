@@ -1,0 +1,6 @@
+<h2>Products</h2>
+<div *ngFor="let product of products; index as i">
+    <a [title]="product.name + '\'s details'" [routerLink]="['/product',product.id]">{{product.name}}</a>
+    <p>{{product.description}}</p>
+    <button *ngIf="product.price < 500">Share</button>
+</div>

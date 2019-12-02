@@ -1,0 +1,8 @@
+<div *ngFor="let product of items">
+    <p>{{product.name}}</p>
+</div>
+<div *ngIf="items.length > 0">
+    <button (click)="onClear()">Clear</button>
+    <button (click)="onPurchase()">Purchase</button>
+</div>
+
